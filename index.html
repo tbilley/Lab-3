@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
+  <title>Lab 3: Mad Libs Project</title>
+  <style>
+    /* Sticky footer styles -------------------------------------------------- */
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+
+    body {
+      margin-bottom: 60px;
+      /* Margin bottom by footer height */
+    }
+    .container {
+      width: auto;
+      max-width: 680px;
+      padding: 0 15px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Lab 3: Mad Libs Project</h1>
+    <p>Fill out the form below and click the button to see the story.</p>
+    <form method="get" id="form">
+		
+       <div class="form-group">
+            	<label for="adjective">Adjective</label>
+            	<input name="adjective" id="adjective" class="form-control adjective" type="text" placeholder="Enter an adjective">
+          	</div>
+			<div class="form-group">
+            	<label for="lastname">Your Last Name</label>
+            	<input name="lastname" id="lastname" class="form-control lastname" type="text" placeholder="Enter your last name">
+          	</div>
+			<div class="form-group">
+            	<label for="adjective2">Adjective</label>
+            	<input name="adjective2" id="adjective2" class="form-control adjective" type="text" placeholder="Enter an adjective">
+          	</div>
+			<div class="form-group">
+            	<label for="noun">Noun</label>
+            	<input name="noun" id="noun" class="form-control noun2" type="text" placeholder="Enter a noun">
+          	</div>
+			<div class="form-group">
+            	<label for="adjective3">Adjective</label>
+            	<input name="adjective3" id="adjective3" class="form-control adjective" type="text" placeholder="Enter an adjective ">
+          	</div>
+				<div class="form-group">
+            	<label for="pluralnoun">Plural Noun</label>
+            	<input name="pluralnoun" id="pluralnoun" class="form-control pluralnoun" type="text" placeholder="Enter a plural noun">
+          	</div>		
+			<div class="form-group">
+            	<label for="noun2">Noun</label>
+            	<input name="noun2" id="noun2" class="form-control noun" type="text" placeholder="Enter a noun">
+          	</div>
+			<div class="form-group">
+            	<label for="adjective4">Adjective</label>
+            	<input name="adjective4" id="adjective4" class="form-control adjective" type="text" placeholder="Enter an adjective">
+          	</div>
+			<div class="form-group">
+            	<label for="pluralnoun2">Plural Noun</label>
+            	<input name="pluralnoun2" id="pluralnoun2" class="form-control pluralnoun" type="text" placeholder="Enter a plural noun">
+          	</div>
+			<div class="form-group">
+            	<label for="noun3">Noun</label>
+            	<input name="noun3" id="noun3" class="form-control noun2" type="text" placeholder="Enter a noun">
+          	</div>
+				<div class="form-group">
+            	<label for="adjective5">Adjective</label>
+            	<input name="adjective5" id="adjective5" class="form-control adjective" type="text" placeholder="Enter an adjective">
+          	</div>
+			<div class="form-group">
+            	<label for="pluralnoun3">Plural Noun</label>
+            	<input name="pluralnoun3" id="pluralnoun3" class="form-control pluralnoun" type="text" placeholder="Enter a plural noun">
+          	</div>		
+			<div class="form-group">
+            	<label for="adjectiv6">Adjective</label>
+            	<input name="adjective6" id="adjective6" class="form-control adjective" type="text" placeholder="Enter an adjective">
+          	</div>
+			<div class="form-group">
+            	<label for="adjective7">Adjective</label>
+            	<input name="adjective7" id="adjective7" class="form-control adjective" type="text" placeholder="Enter an adjective">
+          	</div>
+			<div class="form-group">
+            	<label for="noun4">Noun</label>
+            	<input name="noun4" id="noun4" class="form-control noun" type="text" placeholder="Enter a noun">
+          	</div>
+			<div class="form-group">
+            	<label for="adverb">Adverb</label>
+            	<input name="adverb" id="adverb" class="form-control adverb" type="text" placeholder="Enter an adverb">
+          	</div>
+			<div class="form-group">
+            	<label for="alphabetletter">A letter from the alphabet</label>
+            	<input name="alphabetletter" id="alphabetletter" class="form-control alphabetletter" type="text" placeholder="Enter a letter of the alphabet">
+          	</div>
+			<div class="form-group">
+            	<label for="noun5">Noun</label>
+            	<input name="noun5" id="noun5" class="form-control noun" type="text" placeholder="Enter a noun">
+          	</div>
+		
+		
+		
+      <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div id="story"></div>
+  </div>
+ 
+</body>
+
+<script>
+  
+ document.getElementById('submit').addEventListener('click', function(event) {
+	 event.preventdefault();
+		console.log(document.getElementById('adjective').value);
+		console.log(document.getElementById('lastname').value);
+		console.log(document.getElementById('adjective2').value);
+		console.log(document.getElementById('noun').value);
+		console.log(document.getElementById('adjective3').value);
+		console.log(document.getElementById('pluralnoun').value);
+		console.log(document.getElementById('noun2').value);
+		console.log(document.getElementById('adjective4').value);
+		console.log(document.getElementById('pluralnoun2').value);
+		console.log(document.getElementById('noun3').value);
+		console.log(document.getElementById('adjective5').value);
+		console.log(document.getElementById('pluralnoun3').value);
+		console.log(document.getElementById('adjective6').value);
+		console.log(document.getElementById('adjective7').value);
+		console.log(document.getElementById('noun4').value);
+		console.log(document.getElementById('adverb').value);
+		console.log(document.getElementById('alphabetletter').value);
+		console.log(document.getElementById('noun5').value);
+
+   
+    document.getElementById('form').style.display = 'none';
+
+    
+    document.getElementById('story').innerHTML =
+		' I do not come from your average ' + document.getElementById('adjective').value + 
+		' family. That is because we are all part of the ' + document.getElementById('lastname').value + 
+		' Family rock band and we lead a very ' + document.getElementById('adjective2').value +
+		' life. For example, by not shaving his ' + document.getElementById('noun').value + 
+		' every morning, my dad saves enough time to practice the ' + document.getElementById('adjective3').value +
+		' drums. My brother does not participate in extracurricular ' + document.getElementById('pluralnoun').value +
+		' at school becasue he plays the electric ' + document.getElementById('noun2').value +
+		' My ' + document.getElementById('adjective4').value +
+		' sister does not have time to date ' + document.getElementById('pluralnoun2').value +
+		' because she sings lead vocals and practices for four to five hours every ' + document.getElementById('noun3').value + 
+		' When I am not writing our ' + document.getElementById('adjective5').value + 
+		' songs. I am tickling the ' + document.getElementById('pluralnoun3').value +
+		' on the keyboard so I do not have any free time either. Finally, Mom is our ' + document.getElementById('adjective6').value +
+		' manager. She books our band to play at weddings, ' + document.getElementById('adjective7').value +
+		' sixteens, and ' + document.getElementById('noun4').value +
+		' mitzvahs. Maybe someday, if we practice ' + document.getElementById('adverb').value +
+		' enough we will get to make a music video for ' + document.getElementById('alphabetletter').value +
+		' TV and play sold-out shows at Madison Square ' + document.getElementById('noun5').value;
+  });
+
+  
+  var urlParams = new URLSearchParams(window.location.search);
+  		document.getElementById('adjective').value = urlParams.get('adjective');
+		document.getElementById('lastname').value = urlParams.get('lastname');
+		document.getElementById('adjective2').value = urlParams.get('adjective2');
+		document.getElementById('noun').value = urlParams.get('noun');
+		document.getElementById('adjective3').value = urlParams.get('adjective3');
+		document.getElementById('pluralnoun').value = urlParams.get('pluralnoun');
+		document.getElementById('noun2').value = urlParams.get('noun2');
+		document.getElementById('adjective4').value = urlParams.get('adjective4');
+		document.getElementById('pluralnoun2').value = urlParams.get('pluralnoun2');
+		document.getElementById('noun3').value = urlParams.get('noun3');
+		document.getElementById('adjective5').value = urlParams.get('adjective5');
+		document.getElementById('pluralnoun3').value = urlParams.get('pluralnoun3');
+		document.getElementById('adjective6').value = urlParams.get('adjective6');
+		document.getElementById('adjective7').value = urlParams.get('adjective7');
+		document.getElementById('noun4').value = urlParams.get('noun4');
+		document.getElementById('adverb').value = urlParams.get('adverb');
+		document.getElementById('alphabetletter').value = urlParams.get('alphabetletter');
+		document.getElementById('noun5').value = urlParams.get('noun5');
+
+  
+  if (urlParams.get('adjective') && urlParams.get('lastname') && urlParams.get('adjective2') && urlParams.get('noun') && urlParams.get('adjective3') && urlParams.get('pluralnoun') && urlParams.get('noun2') && urlParams.get('adjective4') && urlParams.get('pluralnoun2') && urlParams.get('noun3') && urlParams.get('adjective5') && urlParams.get('pluralnoun3') && urlParams.get('adjective6') && urlParams.get('adjective7') && urlParams.get('noun4') && urlParams.get('adverb') && urlParams.get('alphabetletter') && urlParams.get('noun5')) {
+		document.getElementById('form').style.display = 'none';
+		document.getElementById('story').innerHTML = 
+		'I do not come from your averages ' + urlParams.get('adjective') + 
+		' family. That is because we are all part of the '+ urlParams.get('lastname') + 
+		' Family rock band and we lead a very ' + urlParams.get('adjective2') +
+		' life. For example, by not shaving his ' + urlParams.get('noun') + 
+		' every morning, my dad saves enough time to practice the ' + urlParams.get('adjective3') +
+		' drums. My brother does not participate in extracurricular ' + urlParams.get('pluralnoun') +
+		' at school becasue he plays the electric ' + urlParams.get('noun2') +
+		' My ' + urlParams.get('adjective4') +
+		' sister does not have time to date ' + urlParams.get('pluralnoun2') +
+		' because she sings lead vocals and practices for four to five hours every ' + urlParams.get('noun3') + 
+		' When I am not writing our ' + urlParams.get('adjective5') + 
+		' songs. I am tickling the ' + urlParams.get('pluralnoun3') +
+		' on the keyboard so I do not have any free time either. Finally, Mom is our ' + urlParams.get('adjective6') +
+		' manager. She books our band to play at weddings, ' + urlParams.get('adjective7') +
+		' sixteens, and ' + urlParams.get('noun4') +
+		' mitzvahs. Maybe someday, if we practice ' + urlParams.get('adverb') +
+		' enough we will get to make a music video for ' + urlParams.get('alphabetletter') +
+		' TV and play sold-out shows at Madison Square ' + urlParams.get('noun5');
+  }
+
+
+  document.getElementById('story').innerHTML += '<br><a class="btn btn-primary" href="index.html">Clear the form</a>';
+
+  
+  	if (!urlParams.get('adjective') || !urlParams.get('lastname') || !urlParams.get('adjective2') || !urlParams.get('noun') || !urlParams.get('adjective3') || !urlParams.get('pluralnoun') || !urlParams.get('noun2') || !urlParams.get('adjective4') || !urlParams.get('pluralnoun2') || !urlParams.get('noun3') || !urlParams.get('adjective5') || !urlParams.get('pluralnoun3') || !urlParams.get('adjective6') || !urlParams.get('adjective7') || !urlParams.get('noun4') || !urlParams.get('adverb') || !urlParams.get('alphabetletter') || !urlParams.get('noun5')) {
+		document.getElementById('story').style.display = 'none';
+  }
+
+</script>
+
+</html>
